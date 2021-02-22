@@ -12,19 +12,28 @@ body {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
+@font-face {
+    font-family: 'Crash Landing';
+    src: url('fonts/crashlandingbb-webfont.woff2') format('woff2'),
+         url('fonts/crashlandingbb-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 a {
-	color: rgb(0,100,200);
+
 	text-decoration: none;
 }
 
 a:hover {
 	text-decoration: underline;
 }
-
+/*
 a:visited {
-	color: rgb(0,80,160);
-}
 
+}
+*/
 label {
 	display: block;
 }
@@ -67,7 +76,7 @@ button:focus {
 	border: 4px solid #000; border-radius:40px;
 	color:#fff; font-family: 'Permanent Marker', cursive; letter-spacing: .08em; 
 }
-.talktext h2 {font-family: 'CrashLanding BB', cursive; font-size:60px; line-height: 1; text-shadow:1px 1px 3px rgba(0,0,0,1);}
+.talktext h2 {font-family: 'Crash Landing', cursive; font-size:60px; line-height: 1; text-shadow:1px 1px 3px rgba(0,0,0,1);}
 .talktext p {font-size:21px; line-height:1.5; text-shadow:1px 1px 3px rgba(0,0,0,.8);}
 
 .tri-right.border.btm-left-in:before {

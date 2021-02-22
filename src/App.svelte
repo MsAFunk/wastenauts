@@ -4,8 +4,8 @@
 
 <style>
 	main {width:100%; height:100vh; margin:0; padding:0;}
-	.main-nav {width:calc(100% - 20px); min-height:100px; position:fixed; top:0; left:50%; transform: translateX(-50%); z-index:110; background: #464445;border-bottom:3px #000 solid;}
-		.main-nav:before {content:" "; width:calc(100% + 21px); min-height:100px; position:fixed; left:-11px; top:0; background: #464445; }
+	.main-nav {width:calc(100% - 22px); min-height:100px; position:fixed; top:0; left:50%; transform: translateX(-50%); z-index:110; background: #464445;border-bottom:3px #000 solid;}
+		.main-nav:before {content:" "; width:calc(100% + 22px); min-height:100px; position:fixed; left:-12px; top:0; background: #464445; }
 		.logo {position:absolute; top:-35px; left:5px;}
 		.main-nav ul {
 			width:calc(100% - 200px); margin:0; padding:40px; position:absolute; top: 0; right:0;
@@ -88,7 +88,11 @@
 
 			.trailer {background: url(/images/main-menu.jpg) no-repeat center center fixed #000; background-size:cover;}
 				.background-filter {width:100%; height:100%; position:absolute; backdrop-filter: blur(100px) brightness(0.8);}
-				.video-embed {width:80vw; height:80vh;  max-width:1280px;max-height:720px; position: absolute; left:50%; top:50%; transform: translate(-50%, -50%); background: #000;}
+				.video-embed {
+					width:80vw; height:80vh; max-width:1280px; max-height:720px; 
+					position: absolute; left:50%; top:50%; transform: translate(-50%, -50%); 
+					background: #000; border:2px #000 solid; outline:10px #464445 solid; box-shadow: 0 0 0 12px rgba(0,0,0,1)
+				}
 
 			
 
@@ -117,7 +121,7 @@
 			</div>
 		</div>
 
-		<a class="CTA-btn" href="#">Now on Kickstarter!</a>
+		<a class="CTA-btn" href="https://www.kickstarter.com/projects/razburygames/wastenauts" target="_blank">Now on Kickstarter!</a>
 	</div>
 	
 	<div class="divider"></div>
@@ -125,7 +129,10 @@
 	<div class="comic-panel trailer">
 		<div class="background-filter"></div>
 		
-		<div class="video-embed"></div>	
+		<div class="video-embed">
+			<iframe style="width:100%; height:100%;" src="https://www.youtube.com/embed/JEBM7ErIPJs" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+		</div>	
 	</div>
 
 	<div class="divider"></div>
