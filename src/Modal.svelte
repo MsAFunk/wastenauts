@@ -1,5 +1,5 @@
 <script>
-    export let imagePath ="1";
+    export let imagePath = 1;
     export let showModal = false;
 
 </script>

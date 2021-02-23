@@ -1,6 +1,6 @@
 <style>
 .main-nav {width:calc(100% - 22px); min-height:100px; position:fixed; top:0; left:50%; transform: translateX(-50%); z-index:110; background: #464445;border-bottom:3px #000 solid;}
-    .main-nav:before {content:" "; width:calc(100% + 22px); min-height:100px; position:fixed; left:-12px; top:0; background: #464445; }
+    .main-nav:before {content:" "; width:calc(100% + 23px); min-height:100px; position:fixed; left:-12px; top:0; background: #464445; }
     .logo {position:absolute; top:-35px; left:5px;}
     .main-nav ul {
         width:calc(100% - 200px); margin:0; padding:40px; position:absolute; top: 0; right:0;
@@ -20,11 +20,7 @@
         position: fixed;	top: 100px; right: 0; z-index: 100;
         background: #464445; border-left: 3px solid #000;
     }
-    main:after {
-        content: " ";
-        width:calc(100% - 20px); height:10px;
-        position: fixed; bottom:0; left:10px; z-index: 110;
-        background: #464445; border-top: 3px solid #000;}
+
 
 </style>
 
