@@ -5,8 +5,9 @@
 	let showModal = false;
 	let imagePath = "1";
 
-	const toggleModal = () => {
+	const toggleModal = (slide) => {
 		showModal = !showModal;
+		imagePath = slide;
 	}
 
 </script>
@@ -126,9 +127,9 @@
 		</div>
 		<div class="screenshots">
 			<ul>
-				<li on:click={toggleModal}><img src="images/1-thumb.jpg" alt=""></li>
-				<li><img src="images/2-thumb.jpg" alt=""></li>
-				<li><img src="images/3-thumb.jpg" alt=""></li>
+				<li on:click={() => toggleModal(1)}><img src="images/1-thumb.jpg" alt=""></li>
+				<li on:click={() => toggleModal(2)}><img src="images/2-thumb.jpg" alt=""></li>
+				<li on:click={() => toggleModal(3)}><img src="images/3-thumb.jpg" alt=""></li>
 			</ul>
 		</div>
 	</div>
@@ -145,9 +146,9 @@
 
 		<div class="screenshots">
 			<ul>
-				<li><img src="images/4-thumb.jpg" alt=""></li>
-				<li><img src="images/5-thumb.jpg" alt=""></li>
-				<li><img src="images/6-thumb.jpg" alt=""></li>
+				<li on:click={() => toggleModal(4)}><img src="images/4-thumb.jpg" alt=""></li>
+				<li on:click={() => toggleModal(5)}><img src="images/5-thumb.jpg" alt=""></li>
+				<li on:click={() => toggleModal(6)}><img src="images/6-thumb.jpg" alt=""></li>
 			</ul>
 		</div>
 
@@ -165,9 +166,9 @@
 
 		<div class="screenshots">
 			<ul>
-				<li><img src="images/7-thumb.jpg" alt=""></li>
-				<li><img src="images/8-thumb.jpg" alt=""></li>
-				<li><img src="images/9-thumb.jpg" alt=""></li>
+				<li on:click={() => toggleModal(7)}><img src="images/7-thumb.jpg" alt=""></li>
+				<li on:click={() => toggleModal(8)}><img src="images/8-thumb.jpg" alt=""></li>
+				<li on:click={() => toggleModal(9)}><img src="images/9-thumb.jpg" alt=""></li>
 			</ul>
 		</div>
 
