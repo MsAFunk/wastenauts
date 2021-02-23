@@ -1,37 +1,11 @@
 <script>
-	export let name;
+	import Header from './Header.svelte';
+	import Modal from './Modal.svelte';
 </script>
 
 <style>
 	main {width:100%; height:100vh; margin:0; padding:0;}
-	.main-nav {width:calc(100% - 22px); min-height:100px; position:fixed; top:0; left:50%; transform: translateX(-50%); z-index:110; background: #464445;border-bottom:3px #000 solid;}
-		.main-nav:before {content:" "; width:calc(100% + 22px); min-height:100px; position:fixed; left:-12px; top:0; background: #464445; }
-		.logo {position:absolute; top:-35px; left:5px;}
-		.main-nav ul {
-			width:calc(100% - 200px); margin:0; padding:40px; position:absolute; top: 0; right:0;
-			list-style:none; text-align: right;}
-		.main-nav li {width:auto; height:34px; display:inline-block; vertical-align: middle; margin-left:55px; font: 20px/32px 'Permanent Marker', cursive; letter-spacing:.05em; }
-		.main-nav a {color:#fff;}
 	
-		.comic-borders:before {
-			content: " ";
-			width:10px; height:calc(100vh - 100px); 
-			position: fixed;	top: 100px; left: 0; z-index: 100;
-			background: #464445; border-right: 3px solid #000;
-		}
-		.comic-borders:after {
-			content: " ";
-			width:10px; height:calc(100vh - 100px);
-			position: fixed;	top: 100px; right: 0; z-index: 100;
-			background: #464445; border-left: 3px solid #000;
-		}
-		main:after {
-			content: " ";
-			width:calc(100% - 20px); height:10px;
-			position: fixed; bottom:0; left:10px; z-index: 110;
-			background: #464445; border-top: 3px solid #000;}
-	
-
 		.comic-panel {width:100%; height:100vh; margin:0; padding:0; position:relative;}
 			.divider {
 				width:calc(100% - 20px); height:10px; position:relative; margin:0 auto; z-index:106; 
@@ -105,24 +79,15 @@
 </style>
 
 <main>
-	<header class="main-nav">
-		<h1 class="logo"><img src="/images/logo.png" alt="Wastenauts"></h1>
-		<ul>
-			<li><a href="https://store.steampowered.com/app/1357590/" target="_blank"><img src="/images/logo-steam.png" alt="Download on Steam"></a></li>
-			<li><a href="https://gamejolt.com/games/fromrust/470569" target="_blank"><img src="/images/logo-gamejolt.png" alt="Download on Game Jolt"></a></li>
-			<li><a href="https://wastenauts.fandom.com" target="_blank">Wiki</a></li>
-			<li><a href="https://www.tumblr.com/blog/wastenauts" target="_blank">Dev Blog</a></li>
-			<li><a href="https://razburygames.threadless.com" target="_blank">Merch</a></li>
-			<li><a href="https://discord.gg/uCUeWKG"><img src="images/icon-discord.svg" alt="Discord" width="20"></a></li>
-			<li><a href="https://twitter.com/WastenautsGame" target="_blank"><img src="images/icon-twitter.svg" alt="Twitter" width="22"></a></li>
-		</ul>
-	</header>
-	<div class="comic-borders"></div>
-	<div class="comic-panel jack">
 
+	<Header />
+	
+	<Modal />
+
+	<div class="comic-panel jack">
 		<div class="talk-bubble">
 			<div class="talktext tri-right border round btm-left-in">
-				<h2>So you wanna be a diver, huh?</h2>
+				<h2>So you wanna be a diver?</h2>
 				<p>Grab your friends and explore what’s left of the surface of Earth. Fight some machines. Blow ‘em up for parts. Put the parts back together to make cool toys. Or sell ‘em. You do you, Diver.</p>
 			</div>
 			
@@ -201,6 +166,5 @@
 	</div>
 
 	
-
 
 </main>
