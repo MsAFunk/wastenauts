@@ -77,9 +77,8 @@
 				<p>Grab your friends and explore what’s left of the surface of Earth. Fight some machines. Blow ‘em up for parts. Put the parts back together to make cool toys. Or sell ‘em. You do you, Diver.</p>
 			</div>
 		</div>
-
 		<a class="CTA-btn" href="https://www.kickstarter.com/projects/razburygames/wastenauts" target="_blank">Now on Kickstarter!</a>
-		<div class="divider"></div>
+		
 	</div>
 	
 	<div class="comic-panel trailer">
