@@ -37,9 +37,15 @@
 				width:calc(100% - 20px); height:10px; position:relative; margin:0 auto; z-index:106; 
 				background-color:#464445; border-top:3px #000 solid;border-bottom:3px #000 solid;
 			}
+
+			.screenshots {width:30%; position:absolute; bottom:50%; right:3%; transform: translateY(50%); }
+				.screenshots ul { width:100%; list-style:none; margin:0; padding:0; text-align:right; vertical-align: middle;}
+				.screenshots li { margin:30px;}
+				.screenshots img {width:90%; max-width:350px; border:5px #464445 solid; outline:2px #000 solid;transition: all 0.2s ease;}
+				.screenshots img:hover {width:100%; max-width:400px; cursor:pointer;}
 			
 			.jack {background:url(/images/main-menu.jpg) no-repeat center center fixed; background-size:cover;}			
-				.jack .talk-bubble{width:95%; max-width:1250px; position:absolute; top:17%; left:1%;}
+				.jack .talk-bubble{width:60%; max-width:1250px; position:absolute; top:17%; left:1%;}
 				.jack .talk-bubble:before { /*Jack Portrait*/
 					content:" "; display:inline-block;
 					width:50%; min-width:500px; max-width:690px; height:860px;
@@ -51,7 +57,7 @@
 				.jack .tri-right.btm-left-in:after{	border-color:#7D2222 transparent transparent #7D2222;}
 			
 			.buster {background:url(/images/wastes-day.jpg) no-repeat center center fixed; background-size:cover; overflow:hidden;}			
-				.buster .talk-bubble{width:95%; max-width:1200px; position:absolute; top:17%; left:0;}
+				.buster .talk-bubble{width:60%; max-width:1200px; position:absolute; top:17%; left:0;}
 				.buster .talk-bubble:before { /*Portrait*/
 					content:" "; display:inline-block;
 					width:50%; min-width:500px; max-width:690px; height:700px;
@@ -63,7 +69,7 @@
 				.buster .tri-right.btm-left-in:after{	border-color:#CB9F19 transparent transparent #CB9F19;}
 
 			.andrea {background:url(/images/wastes-night.jpg) no-repeat center center fixed; background-size:cover; overflow:hidden;}			
-				.andrea .talk-bubble{width:95%; max-width:1250px; position:absolute; top:18%; left:0;}
+				.andrea .talk-bubble{width:60%; max-width:1250px; position:absolute; top:18%; left:0;}
 				.andrea .talk-bubble:before { /*Portrait*/
 					content:" "; display:inline-block;
 					width:50%; min-width:500px; max-width:690px; height:700px;
@@ -75,7 +81,7 @@
 				.andrea .tri-right.left-in:after{border-color:transparent  #215FB0   #215FB0 transparent;}
 
 			.lena {background:url(/images/sewers.jpg) no-repeat center center fixed; background-size:cover; overflow:hidden;}			
-			.lena .talk-bubble{width:95%; max-width:1260px; position:absolute; top:18%; left:2%;}
+			.lena .talk-bubble{width:60%; max-width:1260px; position:absolute; top:18%; left:2%;}
 				.lena .talk-bubble:before { /*Portrait*/
 					content:" "; display:inline-block;
 					width:50%; height:800px;
@@ -119,6 +125,7 @@
 				<h2>So you wanna be a diver, huh?</h2>
 				<p>Grab your friends and explore what’s left of the surface of Earth. Fight some machines. Blow ‘em up for parts. Put the parts back together to make cool toys. Or sell ‘em. You do you, Diver.</p>
 			</div>
+			
 		</div>
 
 		<a class="CTA-btn" href="https://www.kickstarter.com/projects/razburygames/wastenauts" target="_blank">Now on Kickstarter!</a>
@@ -144,6 +151,13 @@
 				<p>No two game sessions will ever be quite the same. You’re exploring - and fighting against - a location deck, and what goes into that deck, well, who knows?</p>
 			</div>
 		</div>
+		<div class="screenshots">
+			<ul>
+				<li><img src="images/1-thumb.jpg" alt=""></li>
+				<li><img src="images/2-thumb.jpg" alt=""></li>
+				<li><img src="images/3-thumb.jpg" alt=""></li>
+			</ul>
+		</div>
 	</div>
 
 	<div class="divider"></div>
@@ -155,6 +169,15 @@
 				<p>As long-time board and card game fans, we built this game to play with each other. That doesn’t mean you can't go it solo - the party’s four characters can be controlled by one to four players.</p>
 			</div>
 		</div>
+
+		<div class="screenshots">
+			<ul>
+				<li><img src="images/4-thumb.jpg" alt=""></li>
+				<li><img src="images/5-thumb.jpg" alt=""></li>
+				<li><img src="images/6-thumb.jpg" alt=""></li>
+			</ul>
+		</div>
+
 	</div>
 
 	<div class="divider"></div>
@@ -166,6 +189,15 @@
 				<p>In Adventure Mode, you craft the location deck. Stuff it full of monsters, or just put in a bunch of loot. Easy, hard, brutal - build the experience you want to play and then grab a few friends to share it with.</p>
 			</div>
 		</div>
+
+		<div class="screenshots">
+			<ul>
+				<li><img src="images/7-thumb.jpg" alt=""></li>
+				<li><img src="images/8-thumb.jpg" alt=""></li>
+				<li><img src="images/9-thumb.jpg" alt=""></li>
+			</ul>
+		</div>
+
 	</div>
 
 	
