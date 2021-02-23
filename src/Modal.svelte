@@ -22,7 +22,7 @@
             .close:hover {cursor:pointer;background:#a53030;}
             .close:after {
                 content:"\00D7"; 
-                width:100%; height:100%; display:block; position:relative; top:-31px; 
+                width:100%; height:100%; display:block; position:relative; top:-20px; 
                 text-align:center; font-size:40px; color:#fff;
             }
             .close span {visibility: hidden;}
