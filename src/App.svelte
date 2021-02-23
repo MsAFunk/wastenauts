@@ -1,6 +1,14 @@
 <script>
 	import Header from './Header.svelte';
 	import Modal from './Modal.svelte';
+
+	let showModal = false;
+	let imagePath = "1";
+
+	const toggleModal = () => {
+		showModal = !showModal;
+	}
+
 </script>
 
 <style>
@@ -82,7 +90,7 @@
 
 	<Header />
 	
-	<Modal />
+	<Modal {imagePath} {showModal} on:click={toggleModal} />
 
 	<div class="comic-panel jack">
 		<div class="talk-bubble">
@@ -118,7 +126,7 @@
 		</div>
 		<div class="screenshots">
 			<ul>
-				<li><img src="images/1-thumb.jpg" alt=""></li>
+				<li on:click={toggleModal}><img src="images/1-thumb.jpg" alt=""></li>
 				<li><img src="images/2-thumb.jpg" alt=""></li>
 				<li><img src="images/3-thumb.jpg" alt=""></li>
 			</ul>

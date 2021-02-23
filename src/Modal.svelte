@@ -1,9 +1,11 @@
 <script>
-    let showModal = false;
+    export let imagePath ="1";
+    export let showModal = false;
+
 </script>
 
 <style>
-    .window-shade {width:100%; height:100%; position: fixed; top: 0; left: 0; background:rgba(0,0,0,.8); z-index: 200;}
+    .window-shade {width:100%; height:100%; position: fixed; top: 0; left: 0; background:rgba(0,0,0,.8); z-index: 200;} 
         
         .modal {
             width:60vw; 
@@ -17,20 +19,21 @@
                 background:#7D2222; border:2px #000 solid;
                 
             }
-            .close span {display:hidden;}
-            .close span:before {
+            .close:hover {cursor:pointer;background:#a53030;}
+            .close:after {
                 content:"\00D7"; 
-                width:100%; height:100%; display:block; position:relative; top:-10px; 
+                width:100%; height:100%; display:block; position:relative; top:-31px; 
                 text-align:center; font-size:40px; color:#fff;
             }
+            .close span {visibility: hidden;}
 </style>
 
 {#if showModal}
-<div class="window-shade">
+<div class="window-shade" on:click|self>
     
     <div class="modal">       
-        <img src="images/1.jpg" alt="">
-        <div class="close"><span>Close</span></div>
+        <img src="images/{imagePath}.jpg" alt="">        
+        <div class="close" on:click|self><span>Close</span></div>
     </div>
     
     
