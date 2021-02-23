@@ -40,10 +40,6 @@
 					background: #000; border:2px #000 solid; outline:10px #464445 solid; box-shadow: 0 0 0 12px rgba(0,0,0,1)
 				}
 
-	@media all and (max-width:1365px) {
-		.buster, .andrea, .lena {display:none;}
-	}
-	@media all and (min-width:1366px) {
 		.screenshots {width:30%; position:absolute; bottom:50%; right:3%; transform: translateY(50%); }
 				.screenshots ul { width:100%; list-style:none; margin:0; padding:0; text-align:right; vertical-align: middle;}
 					.screenshots li { margin:30px;}
@@ -64,7 +60,6 @@
 				.lena .talk-bubble:before {background: url(/images/LENA.png) center no-repeat; background-size:contain;}
 				.lena .talktext {background-color: #369136;}
 					.lena .tri-right.btm-left-in:after	{border-color:#369136 transparent transparent #369136;}
-	}
 			
 
 </style>
@@ -89,16 +84,12 @@
 	
 	<div class="comic-panel trailer">
 		<div class="background-filter"></div>
-		
 		<div class="video-embed">
 			<iframe title="Wastenauts Announcement Trailer" style="width:100%; height:100%;" src="https://www.youtube.com/embed/JEBM7ErIPJs" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 		</div>
 		<div class="divider"></div>
 	</div>
 
-	
-	
 	<div class="comic-panel buster">
 		<div class="talk-bubble">
 			<div class="talktext tri-right border round btm-left-in">
@@ -116,8 +107,6 @@
 		<div class="divider"></div>
 	</div>
 
-	
-	
 	<div class="comic-panel andrea">
 		<div class="talk-bubble">
 			<div class="talktext tri-right border round btm-left-in">
@@ -125,7 +114,6 @@
 				<p>As long-time board and card game fans, we built this game to play with each other. That doesn’t mean you can't go it solo - the party’s four characters can be controlled by one to four players.</p>
 			</div>
 		</div>
-
 		<div class="screenshots">
 			<ul>
 				<li on:click={() => toggleModal(4)}><img src="images/4-thumb.jpg" alt=""></li>
@@ -135,8 +123,6 @@
 		</div>
 		<div class="divider"></div>
 	</div>
-
-	
 	
 	<div class="comic-panel lena">
 		<div class="talk-bubble">
@@ -145,7 +131,6 @@
 				<p>In Adventure Mode, you craft the location deck. Stuff it full of monsters, or just put in a bunch of loot. Easy, hard, brutal - build the experience you want to play and then grab a few friends to share it with.</p>
 			</div>
 		</div>
-
 		<div class="screenshots">
 			<ul>
 				<li on:click={() => toggleModal(7)}><img src="images/7-thumb.jpg" alt=""></li>
@@ -155,7 +140,5 @@
 		</div>
 		<div class="divider"></div>
 	</div>
-
-	
 
 </main>

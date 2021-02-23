@@ -21,6 +21,16 @@
         background: #464445; border-left: 3px solid #000;
     }
 
+@media screen and (max-width:1155px) {
+    .logo {position:absolute; top:-10px; left:-10px;}
+	.logo img{width:120px; height:120px; }
+    .main-nav ul {width:calc(100% - 100px);padding:20px;}
+}
+
+@media all and (max-width:800px) {
+	.main-nav li.social {display:none;}
+	.main-nav li {margin:0 10px;}
+}
 
 </style>
 
@@ -32,8 +42,8 @@
         <li><a href="https://wastenauts.fandom.com" target="_blank">Wiki</a></li>
         <li><a href="https://www.tumblr.com/blog/wastenauts" target="_blank">Dev Blog</a></li>
         <li><a href="https://razburygames.threadless.com" target="_blank">Merch</a></li>
-        <li><a href="https://discord.gg/uCUeWKG"><img src="images/icon-discord.svg" alt="Discord" width="20"></a></li>
-        <li><a href="https://twitter.com/WastenautsGame" target="_blank"><img src="images/icon-twitter.svg" alt="Twitter" width="22"></a></li>
+        <li class="social"><a href="https://discord.gg/uCUeWKG"><img src="images/icon-discord.svg" alt="Discord" width="20"></a></li>
+        <li class="social"><a href="https://twitter.com/WastenautsGame" target="_blank"><img src="images/icon-twitter.svg" alt="Twitter" width="22"></a></li>
     </ul>
 </header>
 <div class="comic-borders"></div>
