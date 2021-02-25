@@ -44,7 +44,7 @@
         <li><a href="https://store.steampowered.com/app/1357590/" target="_blank"><img src="/images/logo-steam.png" alt="Download on Steam"></a></li>
         <li><a href="https://gamejolt.com/games/fromrust/470569" target="_blank"><img src="/images/logo-gamejolt.png" alt="Download on Game Jolt"></a></li>
         <li class="info"><a href="https://wastenauts.gamepedia.com/Wastenauts_Wiki" target="_blank">Wiki</a></li>
-        <li class="info"><a href="https://www.tumblr.com/blog/wastenauts" target="_blank">Dev Blog</a></li>
+        <li class="info"><a href="https://wastenauts.tumblr.com/" target="_blank">Dev Blog</a></li>
         <li class="info"><a href="https://razburygames.threadless.com" target="_blank">Merch</a></li>
         <li class="social"><a href="https://discord.gg/uCUeWKG"><img src="images/icon-discord.svg" alt="Discord" width="20"></a></li>
         <li class="social"><a href="https://twitter.com/WastenautsGame" target="_blank"><img src="images/icon-twitter.svg" alt="Twitter" width="22"></a></li>
